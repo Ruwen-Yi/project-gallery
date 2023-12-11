@@ -1,0 +1,41 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;       /* set to 100% viewport width */
+    min-height: 100vh;  /* set to 100% viewport height */
+}
+
+*,
+*::before,
+*::after {              /* ::before/after make sure this style also applies to any pseudo-elements */
+    margin:0;           /* avoid being disturbed by default spacing */
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+    list-style: none;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    display: inline-block;
+    border: 3px solid gray;
+    width: 30vw;
+    height: 30vh;
+}
+
+.project-link {
+    color: black;
+}
